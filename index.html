@@ -6,16 +6,67 @@
   <title>Title</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="dist/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
   <aside>
-    <a href="#" class="menu">
+    <a href="#" class="menu__btn">
       <div></div>
     </a>
     <a href="#" class="search"><img src="img/search.svg" alt="search">
     </a>
     <a href="#" class="language">RU</a>
   </aside>
+  <div class="main__menu">
+    <button class="close__menu"><img src="img/close.svg" alt="close"></button>
+    <div class="menu__wrap">
+      <div class="main_menu_column">
+        <h6>
+          <a href="#">О компании</a>
+        </h6>
+        <ul>
+          <li><a href="#">Наша концепция</a></li>
+          <li><a href="#">Политики</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Качество</a></li>
+        </ul>
+      </div>
+      <div class="main_menu_column">
+        <h6>
+          <a href="#">Продукция</a>
+        </h6>
+        <ul>
+          <li><a href="#">Бакалея</a></li>
+          <li><a href="#">Соусы и кетчупы</a></li>
+          <li><a href="#">Кондитерские изделия</a></li>
+          <li><a href="#">Молочная продукция</a></li>
+          <li><a href="#">Хлебобулочные изделия</a></li>
+          <li><a href="#">Вся продукция</a></li>
+        </ul>
+      </div>
+      <div class="main_menu_column">
+        <h6>
+          <a href="#">Производство</a>
+        </h6>
+        <ul>
+          <li><a href="#">Дизайн-студия</a></li>
+          <li><a href="#">Производство пленки</a></li>
+          <li><a href="#">Печать</a></li>
+          <li><a href="#">Ламинация</a></li>
+          <li><a href="#">Бабино-резка</a></li>
+          <li><a href="#">Разбивка готовых пакетов</a></li>
+        </ul>
+      </div>
+      <div class="main_menu_column">
+        <h6>
+          <a href="#">Контакты</a>
+        </h6>
+        <ul>
+          <li><a href="#">Карьера</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <header>
     <a href="#" class="logo"><img src="img/Aventin_logo.svg" alt="logo"></a>
     <div class="wrapper">
@@ -155,7 +206,7 @@
         <a class="footer__mail" href="#">info@aventin.ua</a>
       </div>
       <div class="column">
-        <h5>О компании</h5>
+        <a href="#" class="column__title">О компании</a>
         <ul>
           <li><a href="#">Наша концепция</a></li>
           <li><a href="#">Политики</a></li>
@@ -164,7 +215,7 @@
         </ul>
       </div>
       <div class="column">
-        <h5>Продукция</h5>
+        <a class="column__title" href="#">Продукция</a>
         <ul>
           <li><a href="#">Бакалея</a></li>
           <li><a href="#">Соусы и кетчупы</a></li>
@@ -175,7 +226,7 @@
         </ul>
       </div>
       <div class="column">
-        <h5>Производство</h5>
+        <a class="column__title" href="#">Производство</a>
         <ul>
           <li><a href="#">Дизайн-студия</a></li>
           <li><a href="#">Производство пленки</a></li>
@@ -186,12 +237,13 @@
         </ul>
       </div>
       <div class="column">
-        <h5>Контакты</h5>
+        <a class="column__title" href="#">Контакты</a>
         <ul>
           <li><a href="#">Карьера</a></li>
         </ul>
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
